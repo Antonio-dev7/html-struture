@@ -1,0 +1,63 @@
+/* targeting the height 100% in section was not 
+enough also had to target main/ body/ html*/
+body, html {
+    height: 100%; 
+    margin: 0;
+    /* we're using RGBA function.So-255,255 is white,and 0.8 is 0.8 opacity. */
+    color: rgba(255, 255, 255, .8); 
+    
+}
+
+/* Targeting header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #e84610;
+    padding: 15px 25px;
+}
+
+/* Targeting height of the whole page including section */
+.main {
+    height: 100%;
+}
+
+/* Targeting section */
+.section {
+    background-color: #0097d3;
+    height:100%;
+}
+
+/* Targeting .article and .aside */
+/*Using translateY trick,will center the article.it is a rick*/
+.vcenter {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.section-paragraph {
+font-size: 1em; /* by default it would be 16px */
+margin:25px; /* to alight the text better.*/
+
+}
+
+footer {
+    background-color: #4a4a4f;
+    padding: 15px;
+}
+
+
+@media (min-width: 768px) {
+    .column {
+        float:left;
+    }
+    .column-60 {
+        width: 60%;
+    }
+
+    .column-40 {
+        width: 40%;
+    }
+}
